@@ -281,6 +281,14 @@
 .promo button:hover {
   background-color: #005fa3;
 }
+    .image-banner img, .gallery img {
+      width: 100%;
+      max-width: 800px;
+      margin: 20px auto;
+      display: block;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
 
   </style>
 </head>
@@ -308,15 +316,13 @@
     <h2>Pengen Jago Ngomong Inggris Sehari-hari?</h2>
     <p>Gabung sekarang dan mulai belajar dengan cara seru dan santai!</p>
     <p style="font-size: 1.1rem; margin-top: 10px;"><strong>Biaya: Rp50.000 / jam</strong></p>
-     <p>Dan Dapatkan Promo hanya <strong>Rp100.000/bulan</strong> untuk <strong>2x pertemuan setiap minggu</strong>!</p>
    
 
  <button onclick="window.open('https://wa.me/6285745482471?text=Halo%20saya%20mau%20gabung%20kursus%20Bahasa%20Inggris', '_blank')">Gabung Sekarang</button>
   </section>
   <section class="promo">
   <h2>🎉 Promo Spesial Bulan Ini!</h2>
-  <p>Dapatkan Promo hanya <strong>Rp100.000/bulan</strong> untuk <strong>2x pertemuan setiap minggu</strong>!</p>
-  <p> <strong> HANYA UNTUK 30 ORANG</strong></p>
+  <p>Dapatkan kursus seru hanya <strong>Rp100.000/bulan</strong> untuk <strong>2x pertemuan setiap minggu</strong>!</p>
   <p>Cocok untuk remaja yang ingin mulai ngomong Inggris dengan cara santai & efektif.</p>
 
   </a>
@@ -337,11 +343,24 @@
 
 <section class="galeri">
   <h2>Ayo Belajar Bahasa Inggris</h2>
-  <div class="galeri-container">
-    <img src="img1.jpg" alt="Guru Bule Mengajar" />
-    <img src="img2.jpg" alt="Kelas Interaktif" />
-   
-  </div>
+  <section class="image-banner">
+    <img src="1.jpg" alt="Banner Utama Smart Study Center" />
+  </section>
+
+  <section class="gallery">
+    <h2>Tips Ngomong Lancar Tanpa Grogi!</h2>
+    <img src="2.jpg" alt="Tips Speaking" />
+  </section>
+
+  <section class="gallery">
+    <h2>Program: Smart Speaking One</h2>
+    <img src="3.jpg" alt="Smart Speaking Info" />
+  </section>
+
+  <section class="gallery">
+    <h2>Follow Kami di Sosial Media</h2>
+    <img src="4.jpg" alt="Follow Us Poster" />
+  </section>
 </section>
 
   <section class="features">
@@ -367,19 +386,13 @@
 
   <section class="testimoni">
     <h2>Apa Kata Mereka?</h2>
-   <p> "💬 “Belajarnya seru banget, gak ngebosenin!” - Rara, 15 Tahun",</p> 
-   <p>"💬 “Sekarang aku pede ngomong sama turis!” - Alif, 16 Tahun",</p> 
-    <p>"💬 “Kakaknya asik banget, ngajarnya jadi gampang dimengerti!” - Nia, 14 Tahun",</p>
-   <p> "💬 “Nyesel kalo kalian ga ikutannnn!” - Bayu, 18 Tahun",</p> 
-   <p> "💬 “Aku saranin kalian ikutan gasss!” - Intan, 17 Tahun",</p> 
-    <p>💬 “Belajarnya asyik banget, aku jadi berani ngomong Inggris sama bule!” - Dinda, 19 Tahun" </p> 
+    <p>"Belajarnya asyik banget, aku jadi berani ngomong Inggris sama bule!" - Dinda, 16 tahun</p>
   </section>
 
   <section class="cta">
   <h2>Yuk, Mulai Sekarang!</h2>
   <p>Belajar bisa dimulai hari ini dengan harga terjangkau.</p>
   <p style="font-size: 1.1rem; margin: 10px 0;"><strong>Hanya Rp50.000 / jam!</strong></p>
-     <p>Dan Dapatkan PROMO <strong>Rp100.000/bulan</strong> untuk <strong>2x pertemuan setiap minggu</strong>!</p>
   <button onclick="window.open('https://wa.me/6285745482471?text=Halo%20saya%20tertarik%20ikut%20kursus%20Bahasa%20Inggris', '_blank')">Ikutan Sekarang</button>
 </section>
 <section class="faq">
@@ -436,12 +449,11 @@ ketik();
 <script>
   const chatBox = document.getElementById("chatBox");
   const messages = [
-    "💬 “Belajarnya seru banget, gak ngebosenin!” - Rara, 15 Tahun",
-    "💬 “Sekarang aku pede ngomong sama turis!” - Alif, 16 Tahun",
-    "💬 “Kakaknya asik banget, ngajarnya jadi gampang dimengerti!” - Nia, 14 Tahun",
-    "💬 “Nyesel kalo kalian ga ikutannnn!” - Bayu, 18 Tahun",
-    "💬 “Aku saranin kalian ikutan gasss!” - Intan, 17 Tahun",
-     "💬 “Belajarnya asyik banget, aku jadi berani ngomong Inggris sama bule!” - Dinda, 19 Tahun",
+    "💬 “Belajarnya seru banget, gak ngebosenin!” - Rara, 15",
+    "💬 “Sekarang aku pede ngomong sama turis!” - Alif, 16",
+    "💬 “Kakaknya asik banget, ngajarnya jadi gampang dimengerti!” - Nia, 14",
+    "💬 “Nyesel kalo kalian ga ikutannnn!” - Bayu, 18",
+    "💬 “Aku saranin kalian ikutan gasss!” - Intan, 17",
   ];
 
   let index = 0;
